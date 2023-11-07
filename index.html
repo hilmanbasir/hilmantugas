@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maenghitung luas dan keliling bangun datar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>MENGHITUNG LUAS DAN KELILING BANGUN DATAR</h2>
+<p>Pilih Menu Berikut</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'persegi panjang')">Persegi Panjang</button>
+  <button class="tablinks" onclick="openCity(event, 'Segitiga')">Segitiga</button>
+  <button class="tablinks" onclick="openCity(event, 'Lingkaran')">Lingkaran</button>
+</div>
+
+<div id="persegi panjang" class="tabcontent">
+  <h3>Persegi Panjang</h3>
+  <p>menghitung luas dan keliling persegi panjang</p>
+
+ 
+
+  <form class="inputan_persegi">
+    <label for="panjang">Panjang :</label>
+    <input type="number" id="panjang" name="panjang" placeholder="Masukan Panjang..">
+    
+    <label for="lebar">Lebar :</label>
+    <input type="number" id="lebar" name="lebar" placeholder="Masukan Lebar..">
+    
+    <input class="hitung" type="button" value="Hitung" onclick="hitungLuasDanKelilingPersegiPanjang()">
+    <input class="reset" type="button" value="Reset" onclick="reset()">
+
+    <label for="luasPersegi">Luas :</label>
+    <input type="text" id="luasPersegi" name="luasPersegi" placeholder="0" readonly>
+
+    <label for="kelilingPersegi">Keliling :</label>
+    <input type="text" id="kelilingPersegi" name="kelilingPersegi" placeholder="0" readonly>
+</form>
+</div>
+
+<div id="Segitiga" class="tabcontent">
+  <h3>Segitiga</h3>
+  <p>menghitung luas dan keliling segitiga</p> 
+
+  <form class="inputan_segitiga">
+    <label for="alas">Alas :</label>
+    <input type="number" id="alas" name="alas" placeholder="Masukan Alas..">
+
+    <label for="tinggi">Tinggi :</label>
+    <input type="number" id="tinggi" name="tinggi" placeholder="Masukan Tinggi..">
+
+    <label for="sisi1">Sisi 1 :</label>
+    <input type="number" id="sisi1" name="sisi1" placeholder="Masukan Sisi ke-1..">
+
+    <label for="sisi2">Sisi 2 :</label>
+    <input type="number" id="sisi2" name="sisi2" placeholder="Masukan Sisi ke-2..">
+
+    <label for="sisi3">Sisi 3 :</label>
+    <input type="number" id="sisi3" name="sisi3" placeholder="Masukan sisi ke-3..">
+
+    <input type="button" value="Hitung" onclick="hitungLuasDanKeliling()">
+    <input class="reset" type="button" value="Reset" onclick="reset()">
+
+    <label for="luasSegitiga">Luas :</label>
+    <input type="text" id="luasSegitiga" name="luasSegitiga" placeholder="0" readonly>
+
+    <label for="kelilingSegitiga">Keliling :</label>
+    <input type="text" id="kelilingSegitiga" name="kelilingSegitiga" placeholder="0" readonly>
+  </form>
+  
+</div>
+   
+<div id="Lingkaran" class="tabcontent">
+  <h3>Lingkaran</h3>
+  <p>menghitung luas dan keliling lingkaran</p>
+
+  <p>Masukkan nilai jari-jari (dalam cm)</p>
+  <p>Jari-Jari: <input type="number" id="jariJari"></p>
+  <button onclick="hitungLingkaran()">Hitung</button>
+  <button onclick="resetLingkran()">reset</button>
+  <p id="luasLingkaran"></p>
+  <p id="kelilingLingkaran"></p>
+
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
